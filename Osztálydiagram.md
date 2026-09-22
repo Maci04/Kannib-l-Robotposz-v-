@@ -1,3 +1,5 @@
+`mermaid`
+
 classDiagram
     class SimulationEngine {
         +int width
