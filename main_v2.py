@@ -10,7 +10,7 @@ pygame.font.init()
 
 WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Porszívó Szimuláció")
+pygame.display.set_caption("Porszívó Szimuláció - Támadó mechanika")
 clock = pygame.time.Clock()
 font = pygame.font.SysFont('Arial', 16)
 
@@ -21,7 +21,7 @@ cleaner_list = [
     Cleaner(
         random.randint(50, WIDTH - 50),
         random.randint(50, HEIGHT - 50),
-        speed=random.uniform(1.5, 30.5)
+        speed=random.uniform(1.5, 3.5) # A 30.5 sebesség túl nagy volt, visszavettem, hogy ne ugráljanak ki a pályáról
     ) for _ in range(5)
 ]
 
@@ -36,9 +36,9 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    # Logika frissítése (átadjuk a pálya méretét a falak miatti ütközéshez)
+    # Logika frissítése (átadjuk a cleaner_list-et is a támadáshoz!)
     for cleaner in cleaner_list:
-        cleaner.update(dirt_list, (WIDTH, HEIGHT))
+        cleaner.update(dirt_list, cleaner_list, (WIDTH, HEIGHT))
 
     # Véletlenszerű új kosz generálása
     if random.random() < 0.003 and len(dirt_list) < 25:
