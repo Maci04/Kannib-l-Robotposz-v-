@@ -2,8 +2,6 @@
 
 ## Indítás (VS Code terminál, Windows 11)
 ```
-cd "C:\Users\dave\Desktop\egyetemgeci\5. felev\Projektmunka\project geminivel\3d verzio"
-C:\Users\dave\AppData\Local\Python\pythoncore-3.14-64\python.exe main.py
 ```
 Első indításkor létrejön az `assets/` (textúrák, hangok), a `textures/ursina.ico` és a `settings.json` (hang BE/KI, hangerő).
 
