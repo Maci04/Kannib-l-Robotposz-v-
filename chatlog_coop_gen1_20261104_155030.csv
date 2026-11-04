@@ -1,0 +1,137 @@
+msg_id,sent_tick,deliver_tick,sender,recipient,team_id,category,intent,priority,sector_id,status,reaction,text
+MSG-0001,1,2,R-01,R-12,0,[TASK],TASK_ASSIGN,2,1,REJECTED,"R-12 nem vállalta: más a prioritásom (Felderítő, 10 m)","Szemétgóc (31 db) a(z) (1, 19) körzetben. R-12, átvennéd?"
+MSG-0002,1,2,R-02,R-12,0,[TASK],TASK_ASSIGN,2,2,REJECTED,"R-12 nem vállalta: más a prioritásom (Felderítő, 10 m)","Szemétgóc (35 db) a(z) (1, 19) körzetben. R-12, átvennéd?"
+MSG-0003,1,2,R-03,R-02,0,[TASK],TASK_ASSIGN,2,3,ACCEPTED,R-02 elvállalta (Takarító szerepem és a távolság (11 m) alapján),"Szemétgóc (37 db) a(z) (18, 28) körzetben. R-02, átvennéd?"
+MSG-0004,1,2,R-04,R-07,0,[TASK],TASK_ASSIGN,2,4,ACCEPTED,R-07 elvállalta (Általános szerepem és a távolság (2 m) alapján),"Szemétgóc (45 db) a(z) (15, 39) körzetben. R-07, átvennéd?"
+MSG-0005,1,2,R-05,R-14,0,[INFO],DIRT_SPOT,1,5,ACCEPTED,R-14 átvette a kosz-gócpontot,A(z) #5. szektorban 37 szennyezett gócpontot találtam. Át tudja valaki venni a szélső részt?
+MSG-0006,1,2,R-05,R-14,0,[TASK],TASK_ASSIGN,2,5,ACCEPTED,R-14 elvállalta (Takarító szerepem és a távolság (8 m) alapján),"Szemétgóc (37 db) a(z) (15, 39) körzetben. R-14, átvennéd?"
+MSG-0007,1,2,R-06,R-05,0,[TASK],TASK_ASSIGN,2,6,REJECTED,"R-05 nem vállalta: más a prioritásom (Felderítő, 8 m)","Szemétgóc (34 db) a(z) (15, 39) körzetben. R-05, átvennéd?"
+MSG-0008,1,2,R-10,R-18,0,[TASK],TASK_ASSIGN,2,4,ACCEPTED,R-18 elvállalta (Takarító szerepem és a távolság (3 m) alapján),"Szemétgóc (41 db) a(z) (14, 19) körzetben. R-18, átvennéd?"
+MSG-0009,2,3,R-02,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-16 tudomásul vette,"Átvettem a(z) T3:5 célpontot (R-03 jelzése), 11 m-re vagyok. Ne menjetek oda."
+MSG-0010,2,3,R-05,R-06,0,[TASK],ACK,1,5,ACCEPTED,,"Nem tudom átvenni a(z) T3:7 célpontot: más a prioritásom (Felderítő, 8 m)."
+MSG-0011,2,3,R-07,TEAM,0,[TASK],TARGET_CLAIM,2,1,ACCEPTED,R-19 tudomásul vette,"Átvettem a(z) T3:7 célpontot (R-04 jelzése), 2 m-re vagyok. Ne menjetek oda."
+MSG-0012,2,3,R-07,TEAM,0,[TASK],TARGET_RELEASE,1,1,ACCEPTED,,Felszabadítom a(z) T3:7 célpontot: teljesítettem (odaértem).
+MSG-0013,2,3,R-12,R-01,0,[TASK],ACK,1,6,ACCEPTED,,"Nem tudom átvenni a(z) T0:3 célpontot: más a prioritásom (Felderítő, 10 m)."
+MSG-0014,2,3,R-12,R-02,0,[TASK],ACK,1,6,ACCEPTED,,"Nem tudom átvenni a(z) T0:3 célpontot: más a prioritásom (Felderítő, 10 m)."
+MSG-0015,2,3,R-14,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,,"Átvettem a(z) T3:7 célpontot (R-05 jelzése), 8 m-re vagyok. Ne menjetek oda."
+MSG-0016,2,3,R-18,TEAM,0,[TASK],TARGET_CLAIM,2,6,ACCEPTED,R-10 tudomásul vette,"Átvettem a(z) T2:3 célpontot (R-10 jelzése), 3 m-re vagyok. Ne menjetek oda."
+MSG-0017,11,12,R-02,TEAM,0,[TASK],TARGET_RELEASE,1,2,ACCEPTED,,Felszabadítom a(z) T3:5 célpontot: teljesítettem (odaértem).
+MSG-0018,11,12,R-04,R-14,0,[TASK],TASK_ASSIGN,2,4,ACCEPTED,R-14 elvállalta (Takarító szerepem és a távolság (24 m) alapján),"Szemétgóc (21 db) a(z) (17, 55) körzetben. R-14, átvennéd?"
+MSG-0019,11,12,R-05,R-14,0,[TASK],TASK_ASSIGN,2,5,ACCEPTED,"R-14 elvállalta (közelebbi célpont, lecserélem a korábbit)","Szemétgóc (43 db) a(z) (27, 32) körzetben. R-14, átvennéd?"
+MSG-0020,11,12,R-09,R-02,0,[TASK],SECTOR_CLAIM,1,3,DELIVERED,,"Lefoglalom a(z) #3. szektort (30 kosz-góc maradt, akkum 100%)."
+MSG-0021,11,12,R-12,R-02,0,[TASK],TASK_ASSIGN,2,6,ACCEPTED,R-02 elvállalta (Takarító szerepem és a távolság (19 m) alapján),"Szemétgóc (18 db) a(z) (12, 7) körzetben. R-02, átvennéd?"
+MSG-0022,11,12,R-17,R-18,0,[TASK],TASK_ASSIGN,2,5,ACCEPTED,R-18 elvállalta (Takarító szerepem és a távolság (6 m) alapján),"Szemétgóc (17 db) a(z) (12, 7) körzetben. R-18, átvennéd?"
+MSG-0023,12,13,R-02,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-17 tudomásul vette,"Átvettem a(z) T2:1 célpontot (R-12 jelzése), 19 m-re vagyok. Ne menjetek oda."
+MSG-0024,12,13,R-14,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-04 tudomásul vette,"Átvettem a(z) T3:11 célpontot (R-04 jelzése), 24 m-re vagyok. Ne menjetek oda."
+MSG-0025,12,13,R-14,TEAM,0,[TASK],TARGET_RELEASE,1,2,ACCEPTED,,Felszabadítom a(z) T3:11 célpontot: közelebbi célpontot vállaltam.
+MSG-0026,12,13,R-14,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-05 tudomásul vette,"Átvettem a(z) T5:6 célpontot (R-05 jelzése), 9 m-re vagyok. Ne menjetek oda."
+MSG-0027,12,13,R-18,TEAM,0,[TASK],TARGET_CLAIM,2,6,DROPPED,Rádiójel elveszett (interferencia),"Átvettem a(z) T2:1 célpontot (R-17 jelzése), 6 m-re vagyok. Ne menjetek oda."
+MSG-0028,19,20,R-10,TEAM,0,[TASK],SECTOR_CLEAR,2,4,ACCEPTED,,A(z) #4. szektort teljesen megtisztítottam. Átváltok a(z) #1. szektorra.
+MSG-0029,19,20,R-16,TEAM,0,[TASK],SECTOR_CLEAR,2,4,ACCEPTED,,A(z) #4. szektort teljesen megtisztítottam. Átváltok a(z) #1. szektorra.
+MSG-0030,20,21,R-10,R-18,0,[TASK],TASK_ASSIGN,2,1,ACCEPTED,"R-18 elvállalta (közelebbi célpont, lecserélem a korábbit)","Szemétgóc (19 db) a(z) (26, 7) körzetben. R-18, átvennéd?"
+MSG-0031,21,22,R-04,R-07,0,[TASK],SECTOR_CLAIM,1,1,ACCEPTED,R-07 átengedte Szektor #1-t,"Lefoglalom a(z) #1. szektort (2 kosz-góc maradt, akkum 99%)."
+MSG-0032,21,22,R-04,R-14,0,[TASK],TASK_ASSIGN,2,1,ACCEPTED,R-14 elvállalta (Takarító szerepem és a távolság (14 m) alapján),"Szemétgóc (27 db) a(z) (29, 47) körzetben. R-14, átvennéd?"
+MSG-0033,21,22,R-05,R-14,0,[INFO],DIRT_SPOT,1,5,ACCEPTED,R-14 átvette a kosz-gócpontot,A(z) #5. szektorban 35 szennyezett gócpontot találtam. Át tudja valaki venni a szélső részt?
+MSG-0034,21,22,R-12,R-18,0,[TASK],TASK_ASSIGN,2,6,ACCEPTED,R-18 elvállalta (Takarító szerepem és a távolság (2 m) alapján),"Szemétgóc (14 db) a(z) (25, 9) körzetben. R-18, átvennéd?"
+MSG-0035,21,22,R-14,TEAM,0,[TASK],TARGET_RELEASE,1,3,ACCEPTED,,Felszabadítom a(z) T5:6 célpontot: teljesítettem (odaértem).
+MSG-0036,21,22,R-17,R-18,0,[TASK],TASK_ASSIGN,2,5,REJECTED,R-18 nem vállalta: már van vállalt feladatom,"Szemétgóc (14 db) a(z) (25, 9) körzetben. R-18, átvennéd?"
+MSG-0037,21,22,R-18,TEAM,0,[TASK],TARGET_RELEASE,1,6,ACCEPTED,,Felszabadítom a(z) T2:1 célpontot: közelebbi célpontot vállaltam.
+MSG-0038,21,22,R-18,TEAM,0,[TASK],TARGET_CLAIM,2,6,ACCEPTED,R-17 tudomásul vette,"Átvettem a(z) T5:1 célpontot (R-10 jelzése), 2 m-re vagyok. Ne menjetek oda."
+MSG-0039,22,23,R-05,R-14,0,[TASK],TASK_ASSIGN,2,5,ACCEPTED,"R-14 elvállalta (közelebbi célpont, lecserélem a korábbit)","Szemétgóc (35 db) a(z) (31, 36) körzetben. R-14, átvennéd?"
+MSG-0040,22,23,R-07,R-04,0,[TASK],ACK_HELP,1,2,DELIVERED,,"Rendben R-04, átengedem a(z) #1. szektort, átveszem a(z) #2. zónát."
+MSG-0041,22,23,R-11,R-20,0,[INFO],DIRT_SPOT,1,5,ACCEPTED,R-20 átvette a kosz-gócpontot,A(z) #5. szektorban 7 szennyezett gócpontot találtam. Át tudja valaki venni a szélső részt?
+MSG-0042,22,23,R-14,TEAM,0,[TASK],TARGET_CLAIM,2,3,ACCEPTED,R-04 tudomásul vette,"Átvettem a(z) T5:9 célpontot (R-04 jelzése), 14 m-re vagyok. Ne menjetek oda."
+MSG-0043,22,23,R-18,TEAM,0,[TASK],TARGET_CLAIM,2,6,ACCEPTED,,"Átvettem a(z) T5:1 célpontot (R-12 jelzése), 2 m-re vagyok. Ne menjetek oda."
+MSG-0044,22,23,R-18,R-17,0,[TASK],ACK,1,6,ACCEPTED,,Nem tudom átvenni a(z) T5:1 célpontot: már van vállalt feladatom.
+MSG-0045,22,23,R-18,TEAM,0,[TASK],TARGET_RELEASE,1,6,ACCEPTED,,Felszabadítom a(z) T5:1 célpontot: teljesítettem (odaértem).
+MSG-0046,23,24,R-03,R-02,0,[TASK],TASK_ASSIGN,2,3,ACCEPTED,"R-02 elvállalta (közelebbi célpont, lecserélem a korábbit)","Szemétgóc (24 db) a(z) (25, 14) körzetben. R-02, átvennéd?"
+MSG-0047,23,24,R-14,TEAM,0,[TASK],TARGET_RELEASE,1,3,ACCEPTED,,Felszabadítom a(z) T5:9 célpontot: közelebbi célpontot vállaltam.
+MSG-0048,23,24,R-14,TEAM,0,[TASK],TARGET_CLAIM,2,3,ACCEPTED,R-05 tudomásul vette,"Átvettem a(z) T6:7 célpontot (R-05 jelzése), 5 m-re vagyok. Ne menjetek oda."
+MSG-0049,23,24,R-14,TEAM,0,[TASK],TARGET_RELEASE,1,3,ACCEPTED,,Felszabadítom a(z) T6:7 célpontot: elérhetetlen.
+MSG-0050,24,25,R-01,TEAM,0,[TASK],SECTOR_CLEAR,2,1,ACCEPTED,,A(z) #1. szektort teljesen megtisztítottam. Átváltok a(z) #2. szektorra.
+MSG-0051,24,25,R-02,TEAM,0,[TASK],TARGET_RELEASE,1,2,ACCEPTED,,Felszabadítom a(z) T2:1 célpontot: közelebbi célpontot vállaltam.
+MSG-0052,24,25,R-02,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-03 tudomásul vette,"Átvettem a(z) T5:2 célpontot (R-03 jelzése), 6 m-re vagyok. Ne menjetek oda."
+MSG-0053,24,25,R-06,R-11,0,[INFO],DIRT_SPOT,1,6,ACCEPTED,R-11 átvette a kosz-gócpontot,A(z) #6. szektorban 8 szennyezett gócpontot találtam. Át tudja valaki venni a szélső részt?
+MSG-0054,24,25,R-11,R-14,0,[TASK],TASK_ASSIGN,2,5,ACCEPTED,R-14 elvállalta (Takarító szerepem és a távolság (10 m) alapján),"Szemétgóc (13 db) a(z) (27, 46) körzetben. R-14, átvennéd?"
+MSG-0055,24,25,R-13,TEAM,0,[TASK],SECTOR_CLEAR,2,1,ACCEPTED,,A(z) #1. szektort teljesen megtisztítottam. Átváltok a(z) #2. szektorra.
+MSG-0056,24,25,R-19,TEAM,0,[TASK],SECTOR_CLEAR,2,1,ACCEPTED,,A(z) #1. szektort teljesen megtisztítottam. Átváltok a(z) #2. szektorra.
+MSG-0057,25,26,R-14,TEAM,0,[TASK],TARGET_CLAIM,2,3,ACCEPTED,R-11 tudomásul vette,"Átvettem a(z) T5:9 célpontot (R-11 jelzése), 10 m-re vagyok. Ne menjetek oda."
+MSG-0058,25,26,R-14,R-02,0,[TASK],TASK_ASSIGN,2,3,REJECTED,R-02 nem vállalta: már van vállalt feladatom,"Szemétgóc (33 db) a(z) (31, 36) körzetben. R-02, átvennéd?"
+MSG-0059,26,27,R-02,R-14,0,[TASK],ACK,1,2,ACCEPTED,,Nem tudom átvenni a(z) T6:7 célpontot: már van vállalt feladatom.
+MSG-0060,26,27,R-16,R-14,0,[TASK],TASK_ASSIGN,2,2,REJECTED,R-14 nem vállalta: már van vállalt feladatom,"Szemétgóc (35 db) a(z) (35, 48) körzetben. R-14, átvennéd?"
+MSG-0061,27,28,R-14,R-16,0,[TASK],ACK,1,3,ACCEPTED,,Nem tudom átvenni a(z) T7:9 célpontot: már van vállalt feladatom.
+MSG-0062,29,30,R-18,R-17,0,[TASK],SECTOR_CLAIM,1,6,DELIVERED,,"Lefoglalom a(z) #6. szektort (31 kosz-góc maradt, akkum 97%)."
+MSG-0063,30,31,R-06,R-14,0,[TASK],TASK_ASSIGN,2,6,REJECTED,R-14 nem vállalta: már van vállalt feladatom,"Szemétgóc (19 db) a(z) (35, 48) körzetben. R-14, átvennéd?"
+MSG-0064,31,32,R-04,R-14,0,[TASK],TASK_ASSIGN,2,2,DROPPED,Rádiójel elveszett (interferencia),"Szemétgóc (34 db) a(z) (35, 48) körzetben. R-14, átvennéd?"
+MSG-0065,31,32,R-12,R-01,0,[TASK],TASK_ASSIGN,2,6,ACCEPTED,R-01 elvállalta (Takarító szerepem és a távolság (7 m) alapján),"Szemétgóc (26 db) a(z) (36, 14) körzetben. R-01, átvennéd?"
+MSG-0066,31,32,R-14,R-06,0,[TASK],ACK,1,3,ACCEPTED,,Nem tudom átvenni a(z) T7:9 célpontot: már van vállalt feladatom.
+MSG-0067,31,32,R-17,R-13,0,[TASK],TASK_ASSIGN,2,5,ACCEPTED,R-13 elvállalta (Takarító szerepem és a távolság (11 m) alapján),"Szemétgóc (20 db) a(z) (37, 12) körzetben. R-13, átvennéd?"
+MSG-0068,32,33,R-01,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-17 tudomásul vette,"Átvettem a(z) T7:2 célpontot (R-12 jelzése), 7 m-re vagyok. Ne menjetek oda."
+MSG-0069,32,33,R-02,R-01,0,[TASK],TASK_ASSIGN,2,2,REJECTED,R-01 nem vállalta: már van vállalt feladatom,"Szemétgóc (27 db) a(z) (31, 20) körzetben. R-01, átvennéd?"
+MSG-0070,32,33,R-13,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,,"Átvettem a(z) T7:2 célpontot (R-17 jelzése), 11 m-re vagyok. Ne menjetek oda."
+MSG-0071,33,34,R-01,R-02,0,[TASK],ACK,1,2,ACCEPTED,,Nem tudom átvenni a(z) T6:4 célpontot: már van vállalt feladatom.
+MSG-0072,35,36,R-01,TEAM,0,[TASK],TARGET_RELEASE,1,2,ACCEPTED,,Felszabadítom a(z) T7:2 célpontot: teljesítettem (odaértem).
+MSG-0073,38,39,R-14,TEAM,0,[TASK],SECTOR_CLEAR,2,4,ACCEPTED,,A(z) #4. szektort teljesen megtisztítottam. Átváltok a(z) #2. szektorra.
+MSG-0074,39,40,R-10,R-02,0,[TASK],TASK_ASSIGN,2,2,REJECTED,R-02 nem vállalta: már van vállalt feladatom,"Szemétgóc (20 db) a(z) (31, 20) körzetben. R-02, átvennéd?"
+MSG-0075,40,41,R-02,R-10,0,[TASK],ACK,1,3,ACCEPTED,,Nem tudom átvenni a(z) T6:4 célpontot: már van vállalt feladatom.
+MSG-0076,41,42,R-01,R-02,0,[TASK],TASK_ASSIGN,2,2,REJECTED,R-02 nem vállalta: már van vállalt feladatom,"Szemétgóc (39 db) a(z) (45, 12) körzetben. R-02, átvennéd?"
+MSG-0077,41,42,R-04,R-14,0,[TASK],TASK_ASSIGN,2,2,REJECTED,R-14 nem vállalta: már van vállalt feladatom,"Szemétgóc (33 db) a(z) (43, 47) körzetben. R-14, átvennéd?"
+MSG-0078,41,42,R-12,R-01,0,[TASK],TASK_ASSIGN,2,6,ACCEPTED,R-01 elvállalta (Takarító szerepem és a távolság (4 m) alapján),"Szemétgóc (39 db) a(z) (45, 12) körzetben. R-01, átvennéd?"
+MSG-0079,41,42,R-17,R-01,0,[TASK],TASK_ASSIGN,2,5,REJECTED,R-01 nem vállalta: már van vállalt feladatom,"Szemétgóc (39 db) a(z) (45, 12) körzetben. R-01, átvennéd?"
+MSG-0080,42,43,R-01,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-17 tudomásul vette,"Átvettem a(z) T9:2 célpontot (R-12 jelzése), 4 m-re vagyok. Ne menjetek oda."
+MSG-0081,42,43,R-01,R-17,0,[TASK],ACK,1,2,ACCEPTED,,Nem tudom átvenni a(z) T9:2 célpontot: már van vállalt feladatom.
+MSG-0082,42,43,R-02,R-01,0,[TASK],ACK,1,4,DROPPED,Rádiójel elveszett (interferencia),Nem tudom átvenni a(z) T9:2 célpontot: már van vállalt feladatom.
+MSG-0083,42,43,R-05,R-14,0,[INFO],DIRT_SPOT,1,2,ACCEPTED,R-14 átvette a kosz-gócpontot,A(z) #2. szektorban 20 szennyezett gócpontot találtam. Át tudja valaki venni a szélső részt?
+MSG-0084,42,43,R-14,R-04,0,[TASK],ACK,1,2,ACCEPTED,,Nem tudom átvenni a(z) T8:9 célpontot: már van vállalt feladatom.
+MSG-0085,43,44,R-01,TEAM,0,[TASK],TARGET_RELEASE,1,2,ACCEPTED,,Felszabadítom a(z) T9:2 célpontot: teljesítettem (odaértem).
+MSG-0086,43,44,R-20,R-06,0,[TASK],SECTOR_CLAIM,1,2,DELIVERED,,"Lefoglalom a(z) #2. szektort (19 kosz-góc maradt, akkum 100%)."
+MSG-0087,45,46,R-03,R-02,0,[TASK],TASK_ASSIGN,2,4,ACCEPTED,"R-02 elvállalta (közelebbi célpont, lecserélem a korábbit)","Szemétgóc (17 db) a(z) (31, 20) körzetben. R-02, átvennéd?"
+MSG-0088,45,46,R-11,R-20,0,[TASK],TASK_ASSIGN,2,5,ACCEPTED,R-20 elvállalta (Takarító szerepem és a távolság (6 m) alapján),"Szemétgóc (23 db) a(z) (50, 55) körzetben. R-20, átvennéd?"
+MSG-0089,46,47,R-02,TEAM,0,[TASK],TARGET_RELEASE,1,4,ACCEPTED,,Felszabadítom a(z) T5:2 célpontot: közelebbi célpontot vállaltam.
+MSG-0090,46,47,R-02,TEAM,0,[TASK],TARGET_CLAIM,2,4,ACCEPTED,R-19 tudomásul vette,"Átvettem a(z) T6:4 célpontot (R-03 jelzése), 4 m-re vagyok. Ne menjetek oda."
+MSG-0091,46,47,R-02,TEAM,0,[TASK],TARGET_RELEASE,1,4,ACCEPTED,,Felszabadítom a(z) T6:4 célpontot: elérhetetlen.
+MSG-0092,46,47,R-20,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-11 tudomásul vette,"Átvettem a(z) T10:11 célpontot (R-11 jelzése), 6 m-re vagyok. Ne menjetek oda."
+MSG-0093,47,48,R-19,R-02,0,[TASK],TASK_ASSIGN,2,4,ACCEPTED,R-02 elvállalta (Takarító szerepem és a távolság (8 m) alapján),"Szemétgóc (15 db) a(z) (35, 28) körzetben. R-02, átvennéd?"
+MSG-0094,48,49,R-02,TEAM,0,[TASK],TARGET_CLAIM,2,4,ACCEPTED,R-19 tudomásul vette,"Átvettem a(z) T7:5 célpontot (R-19 jelzése), 8 m-re vagyok. Ne menjetek oda."
+MSG-0095,48,49,R-20,TEAM,0,[TASK],TARGET_RELEASE,1,2,ACCEPTED,,Felszabadítom a(z) T10:11 célpontot: teljesítettem (odaértem).
+MSG-0096,49,50,R-06,R-20,0,[TASK],TASK_ASSIGN,2,6,ACCEPTED,R-20 elvállalta (Takarító szerepem és a távolság (9 m) alapján),"Szemétgóc (26 db) a(z) (57, 57) körzetben. R-20, átvennéd?"
+MSG-0097,49,50,R-08,R-13,0,[TASK],SECTOR_CLAIM,1,2,ACCEPTED,R-13 átengedte Szektor #2-t,"Lefoglalom a(z) #2. szektort (8 kosz-góc maradt, akkum 93%)."
+MSG-0098,49,50,R-14,R-20,0,[TASK],TASK_ASSIGN,2,2,REJECTED,R-20 nem vállalta: már van vállalt feladatom,"Szemétgóc (12 db) a(z) (31, 36) körzetben. R-20, átvennéd?"
+MSG-0099,50,51,R-13,R-08,0,[TASK],ACK_HELP,1,3,DELIVERED,,"Rendben R-08, átengedem a(z) #2. szektort, átveszem a(z) #3. zónát."
+MSG-0100,50,51,R-20,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-06 tudomásul vette,"Átvettem a(z) T11:11 célpontot (R-06 jelzése), 9 m-re vagyok. Ne menjetek oda."
+MSG-0101,50,51,R-20,R-14,0,[TASK],ACK,1,2,DROPPED,Rádiójel elveszett (interferencia),Nem tudom átvenni a(z) T6:7 célpontot: már van vállalt feladatom.
+MSG-0102,51,52,R-12,R-01,0,[TASK],TASK_ASSIGN,2,6,ACCEPTED,R-01 elvállalta (Takarító szerepem és a távolság (5 m) alapján),"Szemétgóc (38 db) a(z) (59, 19) körzetben. R-01, átvennéd?"
+MSG-0103,51,52,R-16,R-20,0,[TASK],TASK_ASSIGN,2,2,ACCEPTED,"R-20 elvállalta (közelebbi célpont, lecserélem a korábbit)","Szemétgóc (36 db) a(z) (55, 48) körzetben. R-20, átvennéd?"
+MSG-0104,51,52,R-17,TEAM,0,[WARNING],HAZARD_WARN,2,5,ACCEPTED,,"Fagy-/veszélyzónát észleltem a(z) (49, 27) koordinátánál! Kerüljétek el ezt a sávot."
+MSG-0105,51,52,R-17,R-13,0,[TASK],TASK_ASSIGN,2,5,ACCEPTED,R-13 elvállalta (Takarító szerepem és a távolság (13 m) alapján),"Szemétgóc (30 db) a(z) (45, 28) körzetben. R-13, átvennéd?"
+MSG-0106,52,53,R-01,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-12 tudomásul vette,"Átvettem a(z) T11:3 célpontot (R-12 jelzése), 5 m-re vagyok. Ne menjetek oda."
+MSG-0107,52,53,R-13,TEAM,0,[TASK],TARGET_CLAIM,2,3,ACCEPTED,R-17 tudomásul vette,"Átvettem a(z) T9:5 célpontot (R-17 jelzése), 13 m-re vagyok. Ne menjetek oda."
+MSG-0108,52,53,R-20,TEAM,0,[TASK],TARGET_RELEASE,1,2,ACCEPTED,,Felszabadítom a(z) T11:11 célpontot: közelebbi célpontot vállaltam.
+MSG-0109,52,53,R-20,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-16 tudomásul vette,"Átvettem a(z) T11:9 célpontot (R-16 jelzése), 3 m-re vagyok. Ne menjetek oda."
+MSG-0110,52,53,R-20,TEAM,0,[TASK],TARGET_RELEASE,1,2,ACCEPTED,,Felszabadítom a(z) T11:9 célpontot: teljesítettem (odaértem).
+MSG-0111,53,54,R-04,R-20,0,[TASK],TASK_ASSIGN,2,2,ACCEPTED,R-20 elvállalta (Takarító szerepem és a távolság (12 m) alapján),"Szemétgóc (22 db) a(z) (61, 58) körzetben. R-20, átvennéd?"
+MSG-0112,53,54,R-15,R-18,0,[TASK],SECTOR_CLAIM,1,3,DELIVERED,,"Lefoglalom a(z) #3. szektort (31 kosz-góc maradt, akkum 98%)."
+MSG-0113,54,55,R-20,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-04 tudomásul vette,"Átvettem a(z) T12:11 célpontot (R-04 jelzése), 12 m-re vagyok. Ne menjetek oda."
+MSG-0114,56,57,R-09,R-10,0,[TASK],SECTOR_CLAIM,1,4,DELIVERED,,"Lefoglalom a(z) #4. szektort (1 kosz-góc maradt, akkum 95%)."
+MSG-0115,59,60,R-13,TEAM,0,[TASK],TARGET_RELEASE,1,3,ACCEPTED,,Felszabadítom a(z) T9:5 célpontot: teljesítettem (odaértem).
+MSG-0116,61,62,R-17,R-13,0,[TASK],TASK_ASSIGN,2,5,ACCEPTED,R-13 elvállalta (Takarító szerepem és a távolság (10 m) alapján),"Szemétgóc (20 db) a(z) (47, 32) körzetben. R-13, átvennéd?"
+MSG-0117,62,63,R-13,TEAM,0,[TASK],TARGET_CLAIM,2,3,ACCEPTED,R-17 tudomásul vette,"Átvettem a(z) T9:6 célpontot (R-17 jelzése), 10 m-re vagyok. Ne menjetek oda."
+MSG-0118,63,64,R-04,R-20,0,[TASK],TASK_ASSIGN,2,2,REJECTED,R-20 nem vállalta: már van vállalt feladatom,"Szemétgóc (21 db) a(z) (70, 55) körzetben. R-20, átvennéd?"
+MSG-0119,63,64,R-10,R-09,0,[TASK],SECTOR_CLAIM,1,2,DELIVERED,,"Lefoglalom a(z) #2. szektort (2 kosz-góc maradt, akkum 91%)."
+MSG-0120,64,65,R-20,R-04,0,[TASK],ACK,1,2,ACCEPTED,,Nem tudom átvenni a(z) T14:11 célpontot: már van vállalt feladatom.
+MSG-0121,66,67,R-11,R-04,0,[INFO],DIRT_SPOT,1,5,ACCEPTED,R-04 átvette a kosz-gócpontot,A(z) #5. szektorban 27 szennyezett gócpontot találtam. Át tudja valaki venni a szélső részt?
+MSG-0122,66,67,R-11,R-20,0,[TASK],TASK_ASSIGN,2,5,REJECTED,R-20 nem vállalta: már van vállalt feladatom,"Szemétgóc (27 db) a(z) (70, 55) körzetben. R-20, átvennéd?"
+MSG-0123,67,68,R-20,R-11,0,[TASK],ACK,1,2,ACCEPTED,,Nem tudom átvenni a(z) T14:11 célpontot: már van vállalt feladatom.
+MSG-0124,68,69,R-06,R-20,0,[TASK],TASK_ASSIGN,2,6,ACCEPTED,"R-20 elvállalta (közelebbi célpont, lecserélem a korábbit)","Szemétgóc (33 db) a(z) (77, 40) körzetben. R-20, átvennéd?"
+MSG-0125,69,70,R-20,TEAM,0,[TASK],TARGET_RELEASE,1,2,ACCEPTED,,Felszabadítom a(z) T12:11 célpontot: közelebbi célpontot vállaltam.
+MSG-0126,69,70,R-20,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-06 tudomásul vette,"Átvettem a(z) T15:8 célpontot (R-06 jelzése), 3 m-re vagyok. Ne menjetek oda."
+MSG-0127,69,70,R-20,TEAM,0,[TASK],TARGET_RELEASE,1,2,ACCEPTED,,Felszabadítom a(z) T15:8 célpontot: teljesítettem (odaértem).
+MSG-0128,71,72,R-17,R-13,0,[TASK],TASK_ASSIGN,2,5,REJECTED,R-13 nem vállalta: már van vállalt feladatom,"Szemétgóc (22 db) a(z) (55, 26) körzetben. R-13, átvennéd?"
+MSG-0129,72,73,R-13,R-17,0,[TASK],ACK,1,3,ACCEPTED,,Nem tudom átvenni a(z) T11:5 célpontot: már van vállalt feladatom.
+MSG-0130,73,74,R-04,R-06,0,[TASK],TASK_ASSIGN,2,2,ACCEPTED,R-06 elvállalta (Támogató szerepem és a távolság (20 m) alapján),"Szemétgóc (8 db) a(z) (82, 57) körzetben. R-06, átvennéd?"
+MSG-0131,73,74,R-05,R-14,0,[TASK],SECTOR_CLAIM,1,5,DELIVERED,,"Lefoglalom a(z) #5. szektort (2 kosz-góc maradt, akkum 86%)."
+MSG-0132,74,75,R-06,TEAM,0,[TASK],TARGET_CLAIM,2,6,ACCEPTED,R-04 tudomásul vette,"Átvettem a(z) T16:11 célpontot (R-04 jelzése), 20 m-re vagyok. Ne menjetek oda."
+MSG-0133,76,77,R-16,R-20,0,[TASK],TASK_ASSIGN,2,2,ACCEPTED,R-20 elvállalta (Takarító szerepem és a távolság (5 m) alapján),"Szemétgóc (24 db) a(z) (78, 35) körzetben. R-20, átvennéd?"
+MSG-0134,77,78,R-12,R-01,0,[TASK],SECTOR_CLAIM,1,2,ACCEPTED,R-01 átengedte Szektor #2-t,"Lefoglalom a(z) #2. szektort (1 kosz-góc maradt, akkum 93%)."
+MSG-0135,77,78,R-20,TEAM,0,[TASK],TARGET_CLAIM,2,2,ACCEPTED,R-16 tudomásul vette,"Átvettem a(z) T15:7 célpontot (R-16 jelzése), 5 m-re vagyok. Ne menjetek oda."
+MSG-0136,78,79,R-01,R-12,0,[TASK],ACK_HELP,1,3,QUEUED,,"Rendben R-12, átengedem a(z) #2. szektort, átveszem a(z) #3. zónát."
